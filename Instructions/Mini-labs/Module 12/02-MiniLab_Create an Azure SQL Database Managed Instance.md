@@ -8,7 +8,7 @@ Azure portal [(https://portal.azure.com)](https://portal.azure.com/) にサイ�
 
 以下の手順では、Managed Instance の作成方法を示します。
 
-1. 「Azure portal」 の左側のメニューで  **「Azure SQL」** を選択します。 **Azure SQL** が一覧にない場合は、 **「すべてのサービス」** を選択し、検索ボックスに **「Azure SQL」と入力します。
+1. 「Azure portal」 の左側のメニューで  **「Azure SQL」** を選択します。 **Azure SQL** が一覧にない場合は、 **「すべてのサービス」** を選択し、検索ボックスに *「Azure SQL」* と入力します。
 
 2. **「+追加」** を選択して **「SQL デプロイメント オプションの選択**」 ページを開きます。 **「Managed Instance」** タイルで **「詳細を表示」** を選択すると、Azure SQL Database Managed Instance に関する追加情報を表示できます。
 
@@ -34,7 +34,7 @@ Azure portal [(https://portal.azure.com)](https://portal.azure.com/) にサイ�
 | アクセスを許可する (パブリック エンドポイントが有効な場合) | 次のいずれかのオプションを選択します。 | ポータルの操作を使用すると、パブリック エンドポイントを使用してセキュリティ グループを構成できます。<br>  |
 
 
-* **「Managed Instance を構成」** を選択して、コンピューティング リソースとストレージ リソースをサイズ変更し、価格レベルのオプションを確認します。スライダーまたはテキスト ボックスを使用して、ストレージの量と仮想コアの数を指定します。完了したら、 **「適用」**を選択して選択範囲を保存します。
+* **「Managed Instance を構成」** を選択して、コンピューティング リソースとストレージ リソースをサイズ変更し、価格レベルのオプションを確認します。スライダーまたはテキスト ボックスを使用して、ストレージの量と仮想コアの数を指定します。完了したら、 **「適用」** を選択して選択範囲を保存します。
 
 ![Managed instance フォーム](../../Linked_Image_Files/demo_managed_sql_image3.png)
 
