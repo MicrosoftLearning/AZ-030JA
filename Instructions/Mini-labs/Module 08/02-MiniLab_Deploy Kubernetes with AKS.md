@@ -99,7 +99,7 @@ SUBNET_ID=$(az network vnet subnet show \
 AKS_CLUSTER_NAME=aksworkshop-$RANDOM
 ```
 
-3. 次のコマンドを実行して、 ```$ AKS_CLUSTER_NAME``` に保存されている値を出力します。後で使用するために、これをメモしてください。必要に応じて将来、変数を再構成する必要があります。
+3. 次のコマンドを実行して、 ```$ AKS_CLUSTER_NAME``` に保存されている値を出力します。後で使用するために、これをメモしてください。必要に応じて今後、変数を再構成する必要があります。
 
 ```Bash
 echo $AKS_CLUSTER_NAME
