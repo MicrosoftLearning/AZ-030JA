@@ -23,7 +23,7 @@ Azure portal を使用して、Azure ストレージ アカウントなどのリ
 
 5. 画面の下部にある 「**自動化用のテンプレートをダウンロードする**」 を選択してください。ポータルには、生成されたテンプレートが表示されます。
 
-    * メイン ペインにテンプレートが表示されます。これは、6 つの最上位要素を持つ JSON ファイルです。 `スキーマ`、 `contentVersion`、 `パラメータ`、 `変数`、 `リソース`、および `出力`。
+    * メイン ペインにテンプレートが表示されます。これは、6 つの最上位要素を持つ JSON ファイルです。`schema`、`contentVersion`、`parameters`、`variables`、`resources`、および `output`。
 
     * 6 つのパラメータが定義されています。そのうちの 1つは **storageAccountName** と呼ばれています。次のセクションでは、テンプレートを編集して、ストレージ アカウントに生成された名前を使用します。
 
@@ -54,8 +54,8 @@ Azure では、各 Azure サービスに一意の名前が必要です。既に�
 
 7. テンプレートに次の 3 つの変更を加えます。
 
-    * パラメーター要素から **storageAccountName** `パラメータ` を削除します。 
-    * 以下の `「変数」` 要素に、 **storageAccountName**という名前の変数を 1 つ追加します。次の例では、一意のストレージ アカウント名が生成されます。
+    * `parameters`ー要素から **storageAccountName** パラメータを削除します。 
+    * 以下の `variables` 要素に、 **storageAccountName**という名前の変数を 1 つ追加します。次の例では、一意のストレージ アカウント名が生成されます。
         ```JSON
         "storageAccountName": "[concat(uniqueString(subscription().subscriptionId), 'storage')]"
         ```
