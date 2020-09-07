@@ -4,7 +4,7 @@
 
 ## コスト分析に移動
 
-1. Azure portal [(https://portal.azure.com)](https://portal.azure.com/) にサインインします。
+1. Azure portal [https://portal.azure.com](https://portal.azure.com/) にサインインします。
 
 1. **Cost Management** を検索し、結果の一覧から **「Cost Management + Billing」** を選択します。
 

@@ -12,7 +12,7 @@
 
 Azure portal でリソース グループ、SQL Server、および単一データベースを作成するには、次の手順を実行します。
 
-1. Azure portal [(https://portal.azure.com)](https://portal.azure.com/) にサインインします。
+1. Azure portal [https://portal.azure.com](https://portal.azure.com/) にサインインします。
 
 2. 検索バーで、 「**Azure SQL**」 を検索して選択します。
 

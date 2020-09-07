@@ -4,7 +4,7 @@
 
 **App Service プランを作成する**
 
-1. Azure portal [(https://portal.azure.com)](https://portal.azure.com/) にサインインします。 
+1. Azure portal [https://portal.azure.com](https://portal.azure.com/) にサインインします。 
 
 2. **App Service プラン**を検索して選択します。
 

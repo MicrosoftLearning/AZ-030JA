@@ -2,7 +2,7 @@
 
 このミニラボでは、Azure portal で Azure SQL Database Managed Instance を作成する方法について説明します。
 
-Azure portal [(https://portal.azure.com)](https://portal.azure.com/) にサインインします。
+Azure portal [https://portal.azure.com](https://portal.azure.com/) にサインインします。
 
 ## Managed Instance を作成する
 

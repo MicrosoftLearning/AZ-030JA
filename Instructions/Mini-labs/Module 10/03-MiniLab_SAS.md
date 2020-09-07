@@ -6,7 +6,7 @@
 
 ## サービス レベルで SAS を作成する
 
-1. Azure portal [(https://portal.azure.com)](https://portal.azure.com/) にサインインします。
+1. Azure portal [https://portal.azure.com](https://portal.azure.com/) にサインインします。
 
 2. 操作するストレージ アカウントを見つけて開きます。BLOB コンテナーにドリル ダウンします。
 

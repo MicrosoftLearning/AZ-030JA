@@ -6,7 +6,7 @@
 
 ## Recovery Services コンテナーを作成します
 
-1. Azure portal [(https://portal.azure.com)](https://portal.azure.com/) にサインインします。ポータルで、Recovery Services と入力し、 **「Recovery Services コンテナー」** を選択します。
+1. Azure portal [https://portal.azure.com](https://portal.azure.com/) にサインインします。ポータルで、Recovery Services と入力し、 **「Recovery Services コンテナー」** を選択します。
 
 2. 「**追加**」 を選択します。
 

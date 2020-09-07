@@ -4,7 +4,7 @@
 
 ## App Service および Web アプリの作成
 
-1. Azure portal [(https://portal.azure.com)](https://portal.azure.com/) にサインインします。
+1. Azure portal [https://portal.azure.com](https://portal.azure.com/) にサインインします。
 
 1. Azure portal メニューまたは**ホーム** ページで 、 「**アプリ サービス**」 を選択します。    
 
