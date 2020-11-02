@@ -1,4 +1,4 @@
-﻿# ミニラボ: Azure Container Instances の実行
+﻿# ミニラボ: Azure Container Instances を実行する
 
 このラボでは、Azure でコンテナーを作成し、完全修飾ドメイン名 (FQDN) を使用してインターネットに公開します。
 
@@ -18,29 +18,29 @@ Azure Container Instances は、簡単なアプリケーション、タスク自
 
 複数のコンテナー間でのサービスの検出、自動スケーリング、アプリケーションの調整されたアップグレードなど、コンテナーの完全なオーケストレーションが必要な場合については、Azure Kubernetes Service (AKS) をお勧めします。
 
-## コンテナーの作成
+## コンテナーを作成する
 
 1. Azure サブスクリプションを使用して、[https://portal.azure.com ](https://portal.azure.com/)で Azure portal にサインインします。
 
-2. Cloud Shell アイコンを使用して、Azure portal から Azure Cloud Shell を開きます。
+2. Cloud Shell アイコンを使用して、Azure portal 内から Azure Cloud Shell を開きます。
 
 ![画像 7](../../Linked_Image_Files/demo_Azure_containers_image1.png)
 
-3. **learn-deploy-aci-rg** という名前の新しいリソース グループを作成して、モジュールが終了したときにこれらのリソースを簡単にクリーン アップできるようにします。別のリソース グループ名を選択した場合は、このモジュールの残りの演習で使用する名前を覚えておいてください。また、リソース グループを作成するリージョン (**たとえば、米国東部**) を選択する必要があります。
+3. モジュールの作成が終了したら簡単にクリーンアップできるように、**learn-deploy-aci-rg**  という名前の新しいリソース グループを作成します。別のリソース グループ名を選択する場合は、このモジュールの残りの演習で覚えておいてください。また、例えば**米国東部**のような、リソース グループを作成するリージョンを選択する必要もあります。
 
 ```Azure CLI
 az group create --name learn-deploy-aci-rg --location eastus
 ```
 
-コンテナーを作成するには、名前、Docker イメージ、Azure リソース グループを ```az container create``` コマンドに指定します。必要に応じて、DNS 名ラベルを指定することにより、コンテナーをインターネットに公開できます。この例では、小さな Web アプリをホストするコンテナーをデプロイします。また、イメージを配置する場所を選択することもできます。 **米国東部**リージョンを使用しますが、近い場所に変更することもできます。
+```az container create``` コマンドに名前、Docker イメージ、および Azure リソース グループを指定してコンテナーを作成します。DNS 名ラベルを指定して、インターネットにコンテナーをオプションで公開できます。この例では、小さな Web アプリをホストするコンテナーをデプロイします。画像を配置する場所を選択することもできます。 **米国東部**地域を使うことにしますが、自分の近くの場所に変更できます。
 
-4. コンテナーをインターネットに公開するために DNS 名を指定します。DNS 名は一意である必要があります。学習のために、このコマンドを Cloud Shell から実行して、一意の名前を保持する Bash 変数を作成します。
+4. コンテナーをインターネットに公開する DNS 名を提供します。DNS 名は一意である必要があります。学習を目的として、一意の名前を保持する Bash 変数を作成するために、 Cloud Shell からこのコマンドを実行します。
 
 ```Azure CLI
 DNS_NAME_LABEL=aci-demo-$RANDOM
 ```
 
-5. 次の ```az container create``` コマンドを実行してコンテナー インスタンスを起動します。
+5. 次の```az container create```コマンドを実行して、コンテナー インスタンスを開始します。
 
 ```Azure
 az container create \
@@ -52,9 +52,9 @@ az container create \
   --location eastus
 ```
 
-```$DNS_NAME_LABEL``` は、DNS 名を指定します。イメージ名 **microsoft/aci-helloworld** は、基本的な Node.js Web アプリケーションを実行する Docker Hub でホストされている Docker イメージを参照します。
+```$DNS_NAME_LABEL```で DNS 名を指定します。イメージ名 **microsoft/aci-helloworld** は、基本的な Node.js Web アプリケーションを実行する Docker Hub でホストされている Docker イメージを参照します。
 
-6. ```az container create``` コマンドが完了したら、```az container show``` を実行してステータスを確認します。
+6. ```az container create```コマンドが完了したら、```az container show```を実行してステータスを確認します。
 
 ```Azure CLI
 az container show \
@@ -64,9 +64,9 @@ az container show \
   --out table
 ```
 
-コンテナーの完全修飾ドメイン名 (FQDN) とそのプロビジョニングの状態が表示されます。次に例を示します。
+コンテナーの完全修飾ドメイン名 (FQDN) とそのプロビジョニングの状態を確認します。次に例を示します。
 
-```Output
+```output
 FQDN ProvisioningState
 
 -------------------------------------- -------------------
@@ -74,8 +74,8 @@ FQDN ProvisioningState
 aci-demo.eastus.azurecontainer.io Succeeded
 ```
 
-コンテナーの状態が **Creating** の場合は、しばらく待ってから、 **Succeeded** 状態になるまでコマンドを再び実行します。
+コンテナーの状態が **作成中** の場合は、しばらく待ってから、**成功** 状態になるまでコマンドを再実行してください。
 
-7. ブラウザーからコンテナーの FQDN に移動して、実行中であることを確認します。これを参照します。
+7. ブラウザーからコンテナーの FQDN に移動して、コンテナーが実行されていることを確認します。
 
 ![ブラウザーで実行されているサンプル Node.js コンテナー アプリのスクリーンショット。](../../Linked_Image_Files/demo_Azure_containers_image2.png)
