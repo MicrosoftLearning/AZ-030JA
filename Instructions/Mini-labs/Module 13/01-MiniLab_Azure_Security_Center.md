@@ -4,9 +4,9 @@
 
 ## Azure Security Center へ移動する
 
-1. Azure portal [(https://portal.azure.com)](https://portal.azure.com/) にサインインします。
+1. Azure portal [https://portal.azure.com](https://portal.azure.com/) にサインインします。
 
-1. **「Security Center** > ** - 推奨事項」** に移動します。
+1. **「Security Center** > **- 推奨事項」** に移動します。
 
 ## 推奨を使用して監視ソフトウェアを追加する
 

@@ -9,7 +9,7 @@
 ## スロットの追加
 複数のデプロイ スロットを有効にするには、アプリが **Standard**、**Premium** または **Isolated** レベルで実行されている必要があります。
 
-1. Azure portal [(https://portal.azure.com)](https://portal.azure.com/) にサインインします。 ** App Services **を検索して選択し、アプリを選択します。 
+1. Azure portal [https://portal.azure.com](https://portal.azure.com/) にサインインします。 **App Services** を検索して選択し、アプリを選択します。 
    
     ![App Services の検索](../../Linked_Image_Files/search-for-app-services.png)
    

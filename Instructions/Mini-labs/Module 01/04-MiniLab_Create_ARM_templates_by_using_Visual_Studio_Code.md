@@ -73,7 +73,7 @@ outputs セクションに要素をもう 1 つ追加して、ストレージ UR
 
     ![Resource Manager テンプレート Visual Studio Code IntelliSense](../../Linked_Image_Files/resource-manager-templates-visual-studio-code-intellisense.png)
 
-1. **「ファイル」 → 「保存」** を選択してファイルを保存します。
+1. **「ファイル」 > 「保存」** を選択してファイルを保存します。
 
 
 ## テンプレートをデプロイする

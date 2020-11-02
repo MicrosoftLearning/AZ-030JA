@@ -3,7 +3,7 @@
 > **注**: このミニラボには、2 つの仮想ネットワークが必要です。
 
 ## 仮想ネットワークを作成する
-1. Azure Portal ([[https://portal.azure.com](https://portal.azure.com/)l](https://portal.azure.com/)) にサインインします。
+1. Azure Portal [https://portal.azure.com](https://portal.azure.com/) にサインインします。
 
 1. ページ上部の検索ボックスで「仮想ネットワーク」を検索し、その名前のリソースをクリックします。新しいビューが表示されます
 
